@@ -1,0 +1,45 @@
+nav {
+    height: 85px;
+    background-color: rgb(59, 207, 54);
+    color: white;
+    text-align: right;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.navbtn{
+    padding: 1.7em 3em;
+    top: 0%;
+    left: -5%;
+    transform: translate(20%, 0%);
+    border: unset;
+    color: #ffffff;
+    z-index: 1;
+    background: rgb(59, 207, 54);
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.navbtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #616161;
+    z-index: -1;
+    transition: all 250ms
+}
+
+.navbtn:hover {
+    color: #ffffff;
+}
+
+.navbtn:hover::before {
+    width: 100%;
+}
