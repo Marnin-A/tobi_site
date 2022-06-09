@@ -1,0 +1,116 @@
+.product-container{
+    margin: 50px 0;
+    border: 1px soild red;
+}
+.product-container h1{
+    margin-bottom: 30px;
+    background-color: #3e7c39;
+    color: #ffffff;
+    width: 80vw;
+}
+.cards-container{
+    width: 80vw;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    background-color: white;
+    gap: 30px;
+    margin:0 auto;
+
+}
+
+.cards{
+  position: relative;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+.discount{
+    position: absolute;
+    padding: 3px 7px;
+    background-color: #88672a;
+    top: 0;
+    right: 0;
+    color: white;
+}
+.card-image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;  
+    background-position: center;
+}
+.card-text{
+    padding: 15px 15px;
+}
+.rating-container{
+    padding: 5px 0;
+    display: flex;
+}
+.cards button{
+    padding: 8px 10px;
+    margin-top: 5px;
+    font-size: medium;
+    background-color: #3e7c39;
+    color: white;
+    border: none;
+    outline: none;
+    transition: transform .2s ease-in-out ;
+}
+.cards button:active {
+    transform: scale(0.8);
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.amount-adjust{
+    display: flex;
+    border: 1px solid #3e7c39;
+    align-items: center;
+    justify-content: center;
+}
+.amount-adjust p{
+    height: 100%;
+    padding: 3px 7px;
+    border-right: 1px solid #3e7c39;
+    font-size: 20px;
+    font-weight: 300;
+}
+.amount-adjust p:last-child{
+    border-right: none;
+    background-color: #eee;
+}
+.amount-adjust p:first-child{
+    background-color: #EEE;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .cards-container{
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+    .product-container h1{
+        width: 90vw;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .cards-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
