@@ -1,5 +1,5 @@
 nav {
-    height: 85px;
+    height: 82px;
     background-color: rgb(59, 207, 54);
     color: white;
     text-align: right;
@@ -31,7 +31,8 @@ nav {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #616161;
+    color: black;
+    background-color: #8ff874;
     z-index: -1;
     transition: all 250ms
 }

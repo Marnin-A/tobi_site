@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 const Navbar=lazy(()=>import('./components/navbar/navbar'));
 const Home=lazy(()=>import('./pages/home/home'));
+const Product=lazy(()=>import('./pages/products/product'))
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/product" element={<Product/>}/>
         </Routes>
       </Router>
     </Suspense>
